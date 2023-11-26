@@ -17,20 +17,20 @@ const mint = new PublicKey("YV9QDki8LfhttZ7ZW5BgoQnjEw4rjpxRZVrBYa4t6LV"); // Or
 (async () => {
   try {
     // Create an ATA
-    const ata = getOrCreateAssociatedTokenAccount(
+    const ata = await getOrCreateAssociatedTokenAccount(
       connection,
       keypair,
       mint,
       keypair.publicKey
     );
-    console.log(`Your ata is: ${(await ata).address.toBase58()}`);
+    console.log(`Your ata is: ${ata.address.toBase58()}`);
 
     // Mint to ATA
     const mintTx = await mintTo(
       connection,
       keypair,
       mint,
-      (await ata).address,
+      ata.address,
       keypair.publicKey,
       token_decimals
     );
