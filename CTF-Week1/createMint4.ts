@@ -1,7 +1,7 @@
 import { createMint } from "@solana/spl-token";
 import { Connection, Keypair } from "@solana/web3.js";
 
-import wallet from "./wallet/wba-wallet.json";
+import wallet from "./wallet/dev-wallet.json";
 
 //Connect our WBA Wallet
 const keypair = Keypair.fromSecretKey(new Uint8Array(wallet));

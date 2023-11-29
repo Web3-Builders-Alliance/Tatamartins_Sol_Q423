@@ -13,7 +13,7 @@ import {
 import { Connection, Keypair, PublicKey, SystemProgram } from "@solana/web3.js";
 import { IDL, Week1 } from "./programs/week1";
 
-import wallet from "./wallet/wba-wallet.json";
+import wallet from "./wallet/dev-wallet.json";
 
 // We're going to import our keypair from the wallet file
 const keypair = Keypair.fromSecretKey(new Uint8Array(wallet));
@@ -46,7 +46,7 @@ const authPda = PublicKey.findProgramAddressSync(
 )[0];
 
 // Paste here the mint address for challenge1 token
-const mint = new PublicKey("4VTczKrVv6B8iahoFexDGfa1kePK68EjvSzM6R7Hh3UX");
+const mint = new PublicKey("7CLj52bFNsUt7uQBRKedW9KLp5VQpgjvoya44JjUka4V");
 
 const token_mint = 10 ** 15;
 

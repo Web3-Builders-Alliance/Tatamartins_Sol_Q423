@@ -11,7 +11,7 @@ import {
   string,
 } from "@metaplex-foundation/umi/serializers";
 import { Commitment, Connection } from "@solana/web3.js";
-import wallet from "./wallet/wba-wallet.json";
+import wallet from "./wallet/dev-wallet.json";
 
 //Create a Solana devnet connection
 const commitment: Commitment = "confirmed";
@@ -28,7 +28,7 @@ umi.use(signerIdentity(signerKeypair));
 console.log(`keypair: ${keypair}`);
 console.log(`signerKeypair: ${signerKeypair}`);
 
-const mint = publicKey("8TUYkuhnM7ew1rR89R7iZhyuWA1b7tkEYTQeaaZ6CoyF");
+const mint = publicKey("2xYxyX1SioRr2vRfsnJkGNDt3V4T74ZR2vUc9m7jKp5x");
 console.log(`mint: ${mint}`);
 const tokenMetadataProgramId = publicKey(
   "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s"
