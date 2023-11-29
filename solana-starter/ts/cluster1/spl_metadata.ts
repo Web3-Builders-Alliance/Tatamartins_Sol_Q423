@@ -9,7 +9,7 @@ import { Commitment, Connection, Keypair, PublicKey } from "@solana/web3.js";
 import wallet from "../dev-wallet.json";
 
 // We're going to import our keypair from the wallet file & RPC
-const keypair1 = Keypair.fromSecretKey(new Uint8Array(wallet));
+const keypair1 = Keypair.(new Uint8Array(wallet));
 const RPC_ENDPOINT = "https://api.devnet.solana.com";
 
 //Create a Solana devnet connection
