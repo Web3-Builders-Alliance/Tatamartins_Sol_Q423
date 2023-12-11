@@ -78,3 +78,7 @@ describe("anchor-vote-solb", () => {
     // console.log("Your transaction signature", tx);
   });
 });
+
+
+// anchor idl init 4RrwwWCGWeaPwj9NbLzYQnANBHWeeGQ474NR4fTmcXsQ -f target/idl/anchor_vote_solb.json
+
